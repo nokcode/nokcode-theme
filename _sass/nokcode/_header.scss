@@ -1,0 +1,39 @@
+body > header {
+    background: $base2;
+    border-bottom: $border;
+    color: $base3;
+
+    & h1 { 
+        display:inline-block;
+        padding: 1.5rem 0;
+
+        a:any-link {
+            color: $red;
+            text-decoration:none;
+        }
+    }
+
+    & nav {
+        float:right;
+
+        a:any-link {
+            border-left:$border;
+            color:$orange;
+            display:inline-block;
+            font-size: 1.6rem;
+            min-width:11.5rem;
+            padding:1.95rem 0;
+            text-align:center;
+            text-decoration:none;
+        }
+
+        a:any-link:last-child {
+            border-right:$border;
+        }
+
+        a:hover {
+            background-color: $orange;
+            color: $base2 !important;
+        }
+    }
+}

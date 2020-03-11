@@ -1,0 +1,9 @@
+<header>
+    {%- if include.href -%}
+        <h2><a href="{{ include.href | relative_url }}">{{ page.title | escape }}</a></h2>
+    {%- else -%}
+        <h2>{{ page.title | escape }}</h2>
+    {%- endif -%}
+    <h3>{{ page.subtitle | escape }}</h3>
+    <p class="postmeta">Posted on {{ page.date | date: "%B %d, %Y" }}.</p>
+</header>

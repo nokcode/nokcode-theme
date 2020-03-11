@@ -1,0 +1,25 @@
+$header-height: 5.6rem;
+$footer-height: 14.65rem;
+
+html, body {
+    height: 100%;
+}
+
+main {
+    min-height: 100%;
+    margin-top: -$header-height;
+    margin-bottom: -$footer-height;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+    }
+
+    &:before {
+        height: $header-height;
+    }
+
+    &:after {
+        height: $footer-height;
+    }
+}

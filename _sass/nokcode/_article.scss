@@ -1,0 +1,17 @@
+article {
+    header {
+        h1 {
+            margin:3rem 0 0.5rem;
+        }
+
+        a:any-link {
+            color: $base03;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $orange;
+            text-decoration: underline;
+        }
+    }
+}

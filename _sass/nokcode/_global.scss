@@ -1,0 +1,68 @@
+html {
+    background: $base3;
+    color: $base02;
+    font-size:62.5%;
+}
+
+body {
+    font-family: $font-family;
+    font-size: 1.8rem;
+    margin:0 auto;
+}
+
+a:any-link {
+    color: $blue;
+    text-decoration: underline;
+}
+
+div.wrapper {
+    margin:0 auto;
+    width:80rem;
+    min-width:80rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-2;
+    font-weight: bolder;
+}
+
+h1 { 
+    font-size: 2.4rem;
+}
+
+h2 { 
+    font-size: 3.6rem;
+    margin:1rem 0;
+}
+
+h3 { 
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin:1rem 0;
+}
+
+hr {
+    border:0;
+    border-bottom:$border;
+    margin:3rem 0;
+}
+
+p {
+    line-height: 2.4rem;
+    margin:1rem 0;
+
+    &.postmeta {
+        color: $base01;
+        font-style: italic;
+    }
+}
+
+em {
+    font-style: italic;
+    color: $base03;
+}
+
+strong {
+    font-weight: bold;
+    color: $base03;
+}

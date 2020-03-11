@@ -1,0 +1,32 @@
+body > footer {
+    background: $base2;
+    border-top: $border;
+    color: $base03;
+    font-family: $font-family-2;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1rem 0;
+    text-align: center;
+
+    hr {
+        display:none;
+    }
+    
+    img {
+        width:3.2rem;
+        height:3.2rem;
+    }
+
+    p:nth-child(2) a {
+        margin-right:1.6rem;
+    }
+
+    a:any-link {
+        text-decoration:none;
+    }
+
+    p:last-child {
+        font-size:1.3rem;
+        font-style:italic;
+    }
+}

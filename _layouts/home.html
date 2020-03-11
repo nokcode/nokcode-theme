@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{%- if site.posts.size > 0 -%}
+    {%- for page in site.posts -%}
+        <article>
+            {%- include post-header.html href=page.url -%}
+            {{ page.excerpt | truncatewords: 40, '...' }}
+        </article>
+        {%- if forloop.last != true -%}
+            <hr />
+        {%- endif -%}
+    {%- endfor -%}
+{%- endif -%}

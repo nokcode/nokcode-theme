@@ -1,0 +1,30 @@
+<footer>
+    <div class="wrapper">
+        <hr />
+        <p>
+            {%- if site.feed -%}
+                <a href="{{ 'feed.xml' | relative_url }}"><img src="{{ "/assets/rss.svg" | relative_url }}" width="32" alt="RSS Feed" /></a>&nbsp;
+            {%- endif -%}
+            {%- if site.github_username -%}
+                <a href="https://github.com/{{ site.github_username }}/"><img src="{{ "/assets/github.svg" | relative_url }}" width="32" alt="GitHub" /></a>&nbsp;
+            {%- endif -%}
+            {%- if site.twitter_username -%}
+                <a href="https://twitter.com/{{ site.twitter_username }}/"><img src="{{ "/assets/twitter.svg" | relative_url }}" width="32" alt="Twitter" /></a>&nbsp;
+            {%- endif -%}
+            {%- if site.spotify_username -%}
+                <a href="https://open.spotify.com/user/{{ site.spotify_username }}/"><img src="{{ "/assets/spotify.svg" | relative_url }}" width="32" alt="Spotify" /></a>&nbsp;
+            {%- endif -%}
+            {%- if site.linode_referral_code -%}
+                <a href="https://www.linode.com/?r={{ site.linode_referral_code }}"><img src="{{ "/assets/linode.svg" | relative_url }}" width="32" alt="Linode" /></a>&nbsp;
+            {%- endif -%}
+        </p>
+        <p>&copy; {{ site.author }} 
+            &bullet; {{ "now" | date: "%Y" }} 
+            &bullet; <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+
+        <p>Brought to you by 
+            <a href="https://pages.github.com/">GitHub Pages</a> powered by 
+            <a href="https://jekyllrb.com/">Jekyll</a> with 
+            <a href="https://github.com/nokcode/nokcode-theme/">nokcode-theme</a> and <a href="https://fontawesome.com/license">Font Awesome</a> icons.</p>
+    </div>
+</footer>
